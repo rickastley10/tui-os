@@ -12,6 +12,7 @@ int main(){
     curs_set(0);
     nodelay(stdscr, TRUE);
     keypad(stdscr, TRUE);
+    set_escdelay(0);
     
 
     int ch;
@@ -94,7 +95,7 @@ int main(){
         mvprintw(screenH-1, 1, "menu |");
 
         refresh();
-        napms(100);
+        napms(1);
     }
     
 
